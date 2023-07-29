@@ -38,7 +38,7 @@ var list = document.getElementById("list");
 var a = 1;
 for(var i = 0; i < AnimalArray.length; i++){
     const listItem = document.createElement("td");
-    listItem.textContent =(a) + " " + AnimalArray[i];
+    listItem.textContent =(a) + ". " + AnimalArray[i];
     list.appendChild(listItem);
     a++;
 }

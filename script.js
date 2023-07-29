@@ -35,10 +35,10 @@ var AnimalArray = ["Aardvark","Albatross","Alligator","Alpaca","Ant",
         "Woodcock","Woodpecker","Worm","Wren","Yak","Zebra"];
 
 var list = document.getElementById("list");
-
+var a = 1;
 for(var i = 0; i < AnimalArray.length; i++){
-    const listItem = document.createElement("li");
-    listItem.textContent = AnimalArray[i];
+    const listItem = document.createElement("td");
+    listItem.textContent =(a) + " " + AnimalArray[i];
     list.appendChild(listItem);
-}        
- 
+    a++;
+}
